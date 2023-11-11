@@ -1,0 +1,45 @@
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+   }
+   @keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#reload-icon {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#reload-icon:hover {
+  transform: rotate(360deg);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  .spinner {
+display: none;
+}
+
+.rotating .spinner {
+display: inline-block;
+}

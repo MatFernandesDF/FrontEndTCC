@@ -1,0 +1,172 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #ffffff;
+}
+
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+   }
+   @keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#reload-icon {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#reload-icon:hover {
+  transform: rotate(360deg);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  .spinner {
+display: none;
+}
+
+.rotating .spinner {
+display: inline-block;
+}
+.content {
+display: flex;
+flex-wrap: wrap;
+flex: 1;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+main {
+  flex: 1;
+  width: 100%;
+}
+
+.glass-content {
+  width: 100%;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+.user-menu {
+  display: none;
+  position: absolute;
+  background-color:white;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  top: 68px;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.user-info.active .user-menu {
+  display: block;
+}
+.list-group-item {
+  position: relative;
+  border-radius: 0px;
+  border: 2px solid transparent;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+  font-size: 19px;
+}
+
+.list-group-item:hover {
+  background-color: #f7eef6;
+  color: white;
+  position: relative;
+}
+
+.list-group-item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #8D448B;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.list-group-item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #8D448B;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+      
+@media (max-width: 720px){
+  html{
+    font-size: 87.5%; 
+  }
+}
+
+@media (max-width: 1080px){
+  html{
+    font-size: 93.75%; // vai gerar 15px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    padding: 10px 20px;
+  }
+
+  #username {
+    display: none;
+  }
+
+  #adminlink {
+    margin-right: 20px;
+  }
+
+  #userinfo .active #usermenu {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .category-card img {
+    height: 150px;
+  }
+}
+
+
+
+
