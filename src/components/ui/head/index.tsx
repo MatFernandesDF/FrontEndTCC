@@ -34,17 +34,20 @@ function Header() {
           </Nav>
           <NavDropdown 
     title={<span className="text-white my-auto">{user?.nome.split(' ')[0]}</span>} 
+    
     id="basic-nav-dropdown" 
     className={styles['custom-dropdown']}
     drop="down"
     renderMenuOnMount={true} 
     style={{ fontSize: '24px' }}
 >
+  
     <div style={{ width: '300px' }}> 
         <NavDropdown.Item href="/alterarUsuarioCliente">Altere seus dados</NavDropdown.Item>
         <NavDropdown.Item onClick={sair}>Sair</NavDropdown.Item>
     </div>
 </NavDropdown>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

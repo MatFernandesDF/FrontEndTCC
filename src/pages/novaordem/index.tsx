@@ -135,9 +135,7 @@ export default function NovaOrdem({ listarCategoria }) {
         <div>
             <Header />
             <Head>
-                <style>{`
-                   
-                `}</style>
+           
             </Head>
 
             <div id={styles.content} className="content">
@@ -169,7 +167,7 @@ export default function NovaOrdem({ listarCategoria }) {
 
                         <div className="my-4">
                             <div style={{ display: 'flex', gap: '20px' }}>
-                                <div className="w-50" style={{ overflowY: 'auto' }}>
+                                <div className="w-100" style={{ overflowY: 'auto' }}>
                                     <select
                                         className="form-select mb-1"
                                         style={{ fontSize: '1.5em', padding: '15px 12px' }}
@@ -184,7 +182,7 @@ export default function NovaOrdem({ listarCategoria }) {
                                         ))}
                                     </select>
                                     {categoriaSelecionada ? (
-                                        <div style={{ display: 'flex', flexWrap: 'wrap', maxHeight: '300px', overflowY: 'auto' }}>
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', maxHeight: '500px', overflowY: 'auto' }}>
                                             {produtos.map((produto) => (
                                                 <div key={produto.id} style={{ flex: '0 0 calc(33.33% - 20px)' }}>
                                                     <div>
@@ -219,9 +217,9 @@ export default function NovaOrdem({ listarCategoria }) {
                                     </div>
                                 </div>
 
-                                <div className="w-50">
+                                <div className="w-100">
                                     {/* Código do carrinho */}
-                                    <div style={{ maxHeight: '500px', overflowY: 'auto' }}>
+                                    <div style={{ maxHeight: '100%', overflowY: 'auto' }}>
                                         {itens.map((item) => (
                                             <div key={item.id} className="item-list d-flex align-items-center justify-content-between">
                                                 <div className="d-flex align-items-center">
